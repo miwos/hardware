@@ -14008,8 +14008,8 @@ Source: www.kingbright.com</description>
 <instance part="+3V1" gate="G$1" x="55.88" y="104.14" smashed="yes">
 <attribute name="VALUE" x="53.34" y="99.06" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY9" gate="GND" x="-17.78" y="81.28" smashed="yes">
-<attribute name="VALUE" x="-19.685" y="78.105" size="1.778" layer="96"/>
+<instance part="SUPPLY9" gate="GND" x="-20.32" y="81.28" smashed="yes">
+<attribute name="VALUE" x="-22.225" y="78.105" size="1.778" layer="96"/>
 </instance>
 <instance part="R3" gate="G$1" x="121.92" y="137.16" smashed="yes">
 <attribute name="NAME" x="118.11" y="138.6586" size="1.778" layer="95"/>
@@ -14293,9 +14293,9 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
-<wire x1="-17.78" y1="83.82" x2="-17.78" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="83.82" x2="-20.32" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="TEENSY-41" gate="G$1" pin="GND"/>
-<wire x1="-17.78" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DISPLAY-2" gate="GND" pin="1"/>
@@ -14432,12 +14432,22 @@ Source: www.kingbright.com</description>
 <wire x1="-86.36" y1="40.64" x2="-86.36" y2="43.18" width="0.1524" layer="91"/>
 <label x="-88.9" y="40.64" size="1.778" layer="95" rot="R270"/>
 </segment>
+<segment>
+<pinref part="TEENSY-41" gate="G$1" pin="37"/>
+<wire x1="43.18" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
+<label x="50.8" y="43.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ENCODER-3-B" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="CHB"/>
 <wire x1="-81.28" y1="-22.86" x2="-81.28" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-81.28" y="-27.94" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="TEENSY-41" gate="G$1" pin="33"/>
+<wire x1="43.18" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
+<label x="50.8" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -14635,12 +14645,22 @@ Source: www.kingbright.com</description>
 <wire x1="-86.36" y1="106.68" x2="-86.36" y2="104.14" width="0.1524" layer="91"/>
 <label x="-88.9" y="104.14" size="1.778" layer="95" rot="R270"/>
 </segment>
+<segment>
+<pinref part="TEENSY-41" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="83.82" x2="2.54" y2="83.82" width="0.1524" layer="91"/>
+<label x="-15.24" y="83.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ENCODER-1-B" class="0">
 <segment>
 <pinref part="ENCODER-1" gate="G$1" pin="CHB"/>
 <wire x1="-81.28" y1="106.68" x2="-81.28" y2="104.14" width="0.1524" layer="91"/>
 <label x="-81.28" y="104.14" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="TEENSY-41" gate="G$1" pin="3"/>
+<wire x1="7.62" y1="81.28" x2="2.54" y2="81.28" width="0.1524" layer="91"/>
+<label x="-15.24" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENCODER-1-PUSH" class="0">
@@ -14649,12 +14669,22 @@ Source: www.kingbright.com</description>
 <wire x1="-86.36" y1="132.08" x2="-86.36" y2="137.16" width="0.1524" layer="91"/>
 <label x="-86.36" y="139.7" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="TEENSY-41" gate="G$1" pin="23"/>
+<wire x1="43.18" y1="83.82" x2="48.26" y2="83.82" width="0.1524" layer="91"/>
+<label x="50.8" y="83.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ENCODER-2-B" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="CHB"/>
 <wire x1="-81.28" y1="43.18" x2="-81.28" y2="40.64" width="0.1524" layer="91"/>
 <label x="-81.28" y="40.64" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="TEENSY-41" gate="G$1" pin="36"/>
+<wire x1="43.18" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
+<label x="50.8" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENCODER-2-PUSH" class="0">
@@ -14663,6 +14693,11 @@ Source: www.kingbright.com</description>
 <wire x1="-86.36" y1="71.12" x2="-86.36" y2="68.58" width="0.1524" layer="91"/>
 <label x="-86.36" y="73.66" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="TEENSY-41" gate="G$1" pin="38"/>
+<wire x1="43.18" y1="45.72" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
+<label x="50.8" y="45.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ENCODER-3-A" class="0">
 <segment>
@@ -14670,12 +14705,22 @@ Source: www.kingbright.com</description>
 <wire x1="-86.36" y1="-22.86" x2="-86.36" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-88.9" y="-27.94" size="1.778" layer="95" rot="R270"/>
 </segment>
+<segment>
+<pinref part="TEENSY-41" gate="G$1" pin="34"/>
+<wire x1="43.18" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<label x="50.8" y="35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ENCODER-3-PUSH" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="S1"/>
 <wire x1="-86.36" y1="2.54" x2="-86.36" y2="7.62" width="0.1524" layer="91"/>
 <label x="-86.36" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEENSY-41" gate="G$1" pin="35"/>
+<wire x1="43.18" y1="38.1" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
+<label x="50.8" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -14701,7 +14746,7 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="TEENSY-41" gate="G$1" pin="27"/>
 <wire x1="7.62" y1="45.72" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
-<label x="-17.78" y="45.72" size="1.778" layer="95"/>
+<label x="-12.7" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUTTON-2" class="0">
@@ -14711,9 +14756,9 @@ Source: www.kingbright.com</description>
 <label x="27.94" y="-43.18" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="TEENSY-41" gate="G$1" pin="29"/>
-<wire x1="7.62" y1="40.64" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
-<label x="-17.78" y="40.64" size="1.778" layer="95"/>
+<pinref part="TEENSY-41" gate="G$1" pin="28"/>
+<wire x1="7.62" y1="43.18" x2="2.54" y2="43.18" width="0.1524" layer="91"/>
+<label x="-12.7" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUTTON-3" class="0">
@@ -14723,9 +14768,9 @@ Source: www.kingbright.com</description>
 <label x="78.74" y="-43.18" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="TEENSY-41" gate="G$1" pin="31"/>
-<wire x1="7.62" y1="35.56" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
-<label x="-17.78" y="35.56" size="1.778" layer="95"/>
+<pinref part="TEENSY-41" gate="G$1" pin="29"/>
+<wire x1="7.62" y1="40.64" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
+<label x="-12.7" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUTTON-1-LED" class="0">
@@ -14733,11 +14778,6 @@ Source: www.kingbright.com</description>
 <label x="-17.78" y="-27.94" size="1.778" layer="95" rot="R180"/>
 <wire x1="-12.7" y1="-27.94" x2="-15.24" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="TEENSY-41" gate="G$1" pin="28"/>
-<wire x1="7.62" y1="43.18" x2="2.54" y2="43.18" width="0.1524" layer="91"/>
-<label x="-17.78" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -14753,11 +14793,6 @@ Source: www.kingbright.com</description>
 <pinref part="R6" gate="G$1" pin="1"/>
 <label x="20.32" y="-27.94" size="1.778" layer="95" rot="R180"/>
 </segment>
-<segment>
-<pinref part="TEENSY-41" gate="G$1" pin="30"/>
-<wire x1="7.62" y1="38.1" x2="2.54" y2="38.1" width="0.1524" layer="91"/>
-<label x="-17.78" y="38.1" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -14771,11 +14806,6 @@ Source: www.kingbright.com</description>
 <wire x1="78.74" y1="-27.94" x2="76.2" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <label x="73.66" y="-27.94" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="TEENSY-41" gate="G$1" pin="32"/>
-<wire x1="7.62" y1="33.02" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
-<label x="-17.78" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -14886,11 +14916,6 @@ Source: www.kingbright.com</description>
 <wire x1="-7.62" y1="-78.74" x2="-10.16" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 </segment>
-<segment>
-<pinref part="TEENSY-41" gate="G$1" pin="34"/>
-<wire x1="43.18" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
-<label x="50.8" y="35.56" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="BUTTON-4" class="0">
 <segment>
@@ -14899,17 +14924,12 @@ Source: www.kingbright.com</description>
 <label x="-7.62" y="-93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="TEENSY-41" gate="G$1" pin="33"/>
-<wire x1="43.18" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
-<label x="50.8" y="33.02" size="1.778" layer="95"/>
+<pinref part="TEENSY-41" gate="G$1" pin="30"/>
+<wire x1="7.62" y1="38.1" x2="2.54" y2="38.1" width="0.1524" layer="91"/>
+<label x="-12.7" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUTTON-5-LED" class="0">
-<segment>
-<pinref part="TEENSY-41" gate="G$1" pin="36"/>
-<wire x1="43.18" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
-<label x="50.8" y="40.64" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="33.02" y1="-78.74" x2="30.48" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -14918,14 +14938,14 @@ Source: www.kingbright.com</description>
 </net>
 <net name="BUTTON-5" class="0">
 <segment>
-<pinref part="TEENSY-41" gate="G$1" pin="35"/>
-<wire x1="43.18" y1="38.1" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
-<label x="50.8" y="38.1" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="S5" gate="G$1" pin="COM"/>
 <wire x1="38.1" y1="-93.98" x2="35.56" y2="-93.98" width="0.1524" layer="91"/>
 <label x="33.02" y="-93.98" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="TEENSY-41" gate="G$1" pin="31"/>
+<wire x1="7.62" y1="35.56" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
+<label x="-12.7" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUTTON-6-LED" class="0">
@@ -14933,11 +14953,6 @@ Source: www.kingbright.com</description>
 <wire x1="83.82" y1="-78.74" x2="81.28" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <label x="78.74" y="-78.74" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="TEENSY-41" gate="G$1" pin="38"/>
-<wire x1="43.18" y1="45.72" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
-<label x="50.8" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUTTON-6" class="0">
@@ -14947,9 +14962,9 @@ Source: www.kingbright.com</description>
 <label x="83.82" y="-93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="TEENSY-41" gate="G$1" pin="37"/>
-<wire x1="43.18" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
-<label x="50.8" y="43.18" size="1.778" layer="95"/>
+<pinref part="TEENSY-41" gate="G$1" pin="32"/>
+<wire x1="7.62" y1="33.02" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
+<label x="-12.7" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX-5" class="0">
