@@ -14019,9 +14019,9 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="129.0574" y="134.62" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="131.8514" y="134.62" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R1" gate="G$1" x="137.16" y="96.52" smashed="yes">
-<attribute name="NAME" x="133.35" y="98.0186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="133.35" y="93.218" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="121.92" y="96.52" smashed="yes">
+<attribute name="NAME" x="118.11" y="98.0186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="93.218" size="1.778" layer="96"/>
 </instance>
 <instance part="P+2" gate="1" x="160.02" y="154.94" smashed="yes">
 <attribute name="VALUE" x="157.48" y="149.86" size="1.778" layer="96" rot="R90"/>
@@ -14149,9 +14149,9 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="129.0574" y="66.04" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="131.8514" y="66.04" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R9" gate="G$1" x="137.16" y="27.94" smashed="yes">
-<attribute name="NAME" x="133.35" y="29.4386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="133.35" y="24.638" size="1.778" layer="96"/>
+<instance part="R9" gate="G$1" x="121.92" y="27.94" smashed="yes">
+<attribute name="NAME" x="118.11" y="29.4386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="24.638" size="1.778" layer="96"/>
 </instance>
 <instance part="P+3" gate="1" x="160.02" y="86.36" smashed="yes">
 <attribute name="VALUE" x="157.48" y="81.28" size="1.778" layer="96" rot="R90"/>
@@ -14576,7 +14576,7 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="MIDI-OUT-1" gate="G$1" pin="5"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="96.52" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX-1" class="0">
@@ -14821,7 +14821,7 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="MIDI-OUT-2" gate="G$1" pin="5"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="27.94" x2="116.84" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -14876,7 +14876,7 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="127" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
 <label x="149.86" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -14976,7 +14976,7 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="27.94" x2="147.32" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="127" y1="27.94" x2="147.32" y2="27.94" width="0.1524" layer="91"/>
 <label x="149.86" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
