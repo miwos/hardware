@@ -737,10 +737,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <library name="adafruit-5pin-din">
 <packages>
 <package name="ADAFRUIT-5PIN-DIN">
-<circle x="0" y="-7.505" radius="0.7245" width="1.449" layer="29"/>
-<circle x="0" y="-7.505" radius="0.7245" width="1.449" layer="30"/>
-<circle x="0" y="7.505" radius="0.7245" width="1.449" layer="29"/>
-<circle x="0" y="7.505" radius="0.7245" width="1.449" layer="30"/>
 <wire x1="-7.7" y1="10.2" x2="8" y2="10.2" width="0.127" layer="51"/>
 <wire x1="8" y1="10.2" x2="8" y2="-10.2" width="0.127" layer="51"/>
 <wire x1="8" y1="-10.2" x2="-7.7" y2="-10.2" width="0.127" layer="51"/>
@@ -759,8 +755,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="-7.95" y1="-10.45" x2="-7.95" y2="10.45" width="0.05" layer="39"/>
 <text x="-7.747" y="10.668" size="1.27" layer="25">&gt;NAME</text>
 <text x="-7.62" y="-11.811" size="1.27" layer="27">&gt;VALUE</text>
-<hole x="0" y="7.505" drill="2.39"/>
-<hole x="0" y="-7.505" drill="2.39"/>
 <pad name="G1" x="-5" y="5.005" drill="1.4"/>
 <pad name="G2" x="-5" y="-5.005" drill="1.4"/>
 <pad name="2" x="5.01" y="0" drill="1.4"/>
