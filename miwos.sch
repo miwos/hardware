@@ -13511,7 +13511,61 @@ Source: www.kingbright.com</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="D6RL" prefix="S">
+<deviceset name="D6RLGNF1LFS" prefix="S">
+<description>Pushbutton Switch SPST-NO Keyswitch Through Hole &lt;a href="https://pricing.snapeda.com/parts/D6R90%20F1%20LFS/C%26K/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="D6RL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="D6RL">
+<connects>
+<connect gate="G$1" pin="COM" pad="1 2"/>
+<connect gate="G$1" pin="COM-LED" pad="5"/>
+<connect gate="G$1" pin="LED" pad="6"/>
+<connect gate="G$1" pin="NO" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" Pushbutton Switch SPST-NO Keyswitch Through Hole "/>
+<attribute name="MF" value="C&amp;K"/>
+<attribute name="MP" value="D6R90 F1 LFS"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/D6R90 F1 LFS/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="D6RLBUF1LFS" prefix="S">
+<description>Pushbutton Switch SPST-NO Keyswitch Through Hole &lt;a href="https://pricing.snapeda.com/parts/D6R90%20F1%20LFS/C%26K/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="D6RL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="D6RL">
+<connects>
+<connect gate="G$1" pin="COM" pad="1 2"/>
+<connect gate="G$1" pin="COM-LED" pad="5"/>
+<connect gate="G$1" pin="LED" pad="6"/>
+<connect gate="G$1" pin="NO" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" Pushbutton Switch SPST-NO Keyswitch Through Hole "/>
+<attribute name="MF" value="C&amp;K"/>
+<attribute name="MP" value="D6R90 F1 LFS"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/D6R90 F1 LFS/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="D6RLWHF1LFS" prefix="S">
 <description>Pushbutton Switch SPST-NO Keyswitch Through Hole &lt;a href="https://pricing.snapeda.com/parts/D6R90%20F1%20LFS/C%26K/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="D6RL" x="0" y="0"/>
@@ -13780,18 +13834,18 @@ Source: www.kingbright.com</description>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="47R"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="USB-HUB" library="614004190021" deviceset="614004190021" device=""/>
-<part name="BUTTON1" library="D6RL" deviceset="D6RL" device=""/>
-<part name="BUTTON2" library="D6RL" deviceset="D6RL" device=""/>
-<part name="BUTTON3" library="D6RL" deviceset="D6RL" device=""/>
+<part name="BUTTON1" library="D6RL" deviceset="D6RLBUF1LFS" device=""/>
+<part name="BUTTON2" library="D6RL" deviceset="D6RLBUF1LFS" device=""/>
+<part name="BUTTON3" library="D6RL" deviceset="D6RLBUF1LFS" device=""/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="220R"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470R"/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="220R"/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470R"/>
 <part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="220R"/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470R"/>
 <part name="OK2" library="6N138" deviceset="6N138" device="" package3d_urn="urn:adsk.eagle:package:21941/1"/>
 <part name="MIDI1-IN" library="adafruit-5pin-din" deviceset="ADAFRUIT-5PIN-DIN" device=""/>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -13807,29 +13861,29 @@ Source: www.kingbright.com</description>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="47R"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
-<part name="BUTTON4" library="D6RL" deviceset="D6RL" device=""/>
-<part name="BUTTON5" library="D6RL" deviceset="D6RL" device=""/>
-<part name="BUTTON6" library="D6RL" deviceset="D6RL" device=""/>
+<part name="BUTTON4" library="D6RL" deviceset="D6RLGNF1LFS" device=""/>
+<part name="BUTTON5" library="D6RL" deviceset="D6RLGNF1LFS" device=""/>
+<part name="BUTTON6" library="D6RL" deviceset="D6RLGNF1LFS" device=""/>
 <part name="SUPPLY23" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY25" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY26" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="220R"/>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470R"/>
 <part name="SUPPLY27" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="220R"/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470R"/>
 <part name="SUPPLY28" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="220R"/>
+<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470R"/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="SUPPLY29" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="LED7" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="SUPPLY30" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="220R"/>
+<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470R"/>
 <part name="SUPPLY31" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="220R"/>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470R"/>
 <part name="LED9" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="SUPPLY32" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="220R"/>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470R"/>
 <part name="LED8" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="DISPLAY1" library="DFR0647" deviceset="DFR0647" device=""/>
 <part name="+3V10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -13840,6 +13894,10 @@ Source: www.kingbright.com</description>
 <part name="DISPLAY3" library="DFR0647" deviceset="DFR0647" device=""/>
 <part name="+3V12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY35" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="BUTTON7" library="D6RL" deviceset="D6RLWHF1LFS" device=""/>
+<part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470R"/>
 </parts>
 <sheets>
 <sheet>
@@ -14159,6 +14217,20 @@ Source: www.kingbright.com</description>
 <instance part="SUPPLY35" gate="GND" x="-66.04" y="-17.78" smashed="yes">
 <attribute name="VALUE" x="-67.945" y="-20.955" size="1.778" layer="96"/>
 </instance>
+<instance part="BUTTON7" gate="G$1" x="30.48" y="-68.58" smashed="yes">
+<attribute name="NAME" x="27.94" y="-66.04" size="1.27" layer="95"/>
+<attribute name="VALUE" x="27.94" y="-71.12" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="SUPPLY10" gate="GND" x="40.64" y="-73.66" smashed="yes">
+<attribute name="VALUE" x="38.735" y="-76.835" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY11" gate="GND" x="45.72" y="-66.04" smashed="yes">
+<attribute name="VALUE" x="43.815" y="-69.215" size="1.778" layer="96"/>
+</instance>
+<instance part="R18" gate="G$1" x="15.24" y="-60.96" smashed="yes">
+<attribute name="NAME" x="11.43" y="-59.4614" size="1.778" layer="95"/>
+<attribute name="VALUE" x="11.43" y="-64.262" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14363,6 +14435,18 @@ Source: www.kingbright.com</description>
 <pinref part="SUPPLY35" gate="GND" pin="GND"/>
 <wire x1="-66.04" y1="-10.16" x2="-66.04" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="BUTTON7" gate="G$1" pin="NO"/>
+<wire x1="38.1" y1="-68.58" x2="40.64" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-68.58" x2="40.64" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="BUTTON7" gate="G$1" pin="COM-LED"/>
+<wire x1="38.1" y1="-60.96" x2="45.72" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="SUPPLY11" gate="GND" pin="GND"/>
+<wire x1="45.72" y1="-60.96" x2="45.72" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="ENCODER2-A" class="0">
 <segment>
@@ -14420,13 +14504,6 @@ Source: www.kingbright.com</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="RX1" class="0">
-<segment>
-<pinref part="TEENSY-41" gate="G$1" pin="0"/>
-<wire x1="7.62" y1="88.9" x2="2.54" y2="88.9" width="0.1524" layer="91"/>
-<label x="-5.08" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="TEENSY-41" gate="G$1" pin="VIN"/>
@@ -14456,11 +14533,8 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="USB-HUB" gate="G$1" pin="VBUS"/>
-<pinref part="TEENSY-41" gate="G$2" pin="U5V"/>
 <wire x1="15.24" y1="139.7" x2="12.7" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="139.7" x2="10.16" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="139.7" x2="12.7" y2="124.46" width="0.1524" layer="91"/>
-<junction x="12.7" y="139.7"/>
 <wire x1="12.7" y1="124.46" x2="7.62" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="124.46" x2="7.62" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
@@ -14531,13 +14605,6 @@ Source: www.kingbright.com</description>
 <pinref part="MIDI2-OUT" gate="G$1" pin="5"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="38.1" x2="116.84" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="TX1" class="0">
-<segment>
-<pinref part="TEENSY-41" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="86.36" x2="2.54" y2="86.36" width="0.1524" layer="91"/>
-<label x="-5.08" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -15066,6 +15133,37 @@ Source: www.kingbright.com</description>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="BUTTON3" gate="G$1" pin="LED"/>
 <wire x1="154.94" y1="0" x2="157.48" y2="0" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="BUTTON7" gate="G$1" pin="LED"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="-60.96" x2="20.32" y2="-60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BUTTON7-LED" class="0">
+<segment>
+<label x="5.08" y="-60.96" size="1.778" layer="95" rot="R180"/>
+<wire x1="10.16" y1="-60.96" x2="7.62" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="TEENSY-41" gate="G$1" pin="0"/>
+<wire x1="7.62" y1="88.9" x2="2.54" y2="88.9" width="0.1524" layer="91"/>
+<label x="-15.24" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BUTTON7" class="0">
+<segment>
+<pinref part="BUTTON7" gate="G$1" pin="COM"/>
+<wire x1="22.86" y1="-68.58" x2="20.32" y2="-68.58" width="0.1524" layer="91"/>
+<label x="17.78" y="-68.58" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="TEENSY-41" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="86.36" x2="2.54" y2="86.36" width="0.1524" layer="91"/>
+<label x="-10.16" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
