@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -13690,6 +13690,44 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="sol_pin">
+<packages>
+<package name="MOUNT_CH32">
+<pad name="P$1" x="0" y="0" drill="3.175" diameter="6.4516"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PCB_M-HOLE">
+<text x="-3.81" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.481059375" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="0" visible="off" length="point"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MOUNT_CH" prefix="P">
+<description>mounting hole
+3,2 mm M3</description>
+<gates>
+<gate name="G$1" symbol="PCB_M-HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOUNT_CH32">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13783,7 +13821,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470R"/>
-<part name="LED10" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
+<part name="LED7" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="MIDI1-IN" library="35RASMT2BHNTRX" deviceset="35RASMT2BHNTRX" device=""/>
 <part name="MIDI1-OUT" library="35RASMT2BHNTRX" deviceset="35RASMT2BHNTRX" device=""/>
 <part name="MIDI2-IN" library="35RASMT2BHNTRX" deviceset="35RASMT2BHNTRX" device=""/>
@@ -13791,6 +13829,10 @@ Source: www.kingbright.com</description>
 <part name="ENCODER2" library="PEC16" deviceset="PEC16" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="P1" library="sol_pin" deviceset="MOUNT_CH" device=""/>
+<part name="P2" library="sol_pin" deviceset="MOUNT_CH" device=""/>
+<part name="P3" library="sol_pin" deviceset="MOUNT_CH" device=""/>
+<part name="P4" library="sol_pin" deviceset="MOUNT_CH" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14089,7 +14131,7 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="11.43" y="-67.0814" size="1.778" layer="95"/>
 <attribute name="VALUE" x="11.43" y="-71.882" size="1.778" layer="96"/>
 </instance>
-<instance part="LED10" gate="G$1" x="25.4" y="-68.58" smashed="yes" rot="R90">
+<instance part="LED7" gate="G$1" x="25.4" y="-68.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.972" y="-65.024" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="29.972" y="-62.865" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -14118,6 +14160,22 @@ Source: www.kingbright.com</description>
 </instance>
 <instance part="SUPPLY4" gate="GND" x="-86.36" y="50.8" smashed="yes">
 <attribute name="VALUE" x="-86.995" y="47.625" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="P1" gate="G$1" x="-101.6" y="187.96" smashed="yes">
+<attribute name="NAME" x="-105.41" y="191.135" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-105.41" y="182.88" size="1.778" layer="96"/>
+</instance>
+<instance part="P2" gate="G$1" x="-93.98" y="187.96" smashed="yes">
+<attribute name="NAME" x="-97.79" y="191.135" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-97.79" y="182.88" size="1.778" layer="96"/>
+</instance>
+<instance part="P3" gate="G$1" x="-86.36" y="187.96" smashed="yes">
+<attribute name="NAME" x="-90.17" y="191.135" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-90.17" y="182.88" size="1.778" layer="96"/>
+</instance>
+<instance part="P4" gate="G$1" x="-78.74" y="187.96" smashed="yes">
+<attribute name="NAME" x="-82.55" y="191.135" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-82.55" y="182.88" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -14301,7 +14359,7 @@ Source: www.kingbright.com</description>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
 <wire x1="30.48" y1="-68.58" x2="33.02" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-68.58" x2="33.02" y2="-71.12" width="0.1524" layer="91"/>
-<pinref part="LED10" gate="G$1" pin="C"/>
+<pinref part="LED7" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="ENCODER2" gate="G$1" pin="S2"/>
@@ -14970,7 +15028,7 @@ Source: www.kingbright.com</description>
 <segment>
 <wire x1="22.86" y1="-68.58" x2="20.32" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="LED10" gate="G$1" pin="A"/>
+<pinref part="LED7" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>
