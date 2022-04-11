@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -13372,10 +13372,10 @@ Source: www.kingbright.com</description>
 <wire x1="15" y1="5.7" x2="-15" y2="5.7" width="0.127" layer="21"/>
 <wire x1="-15" y1="5.7" x2="-15" y2="-5.7" width="0.127" layer="21"/>
 <wire x1="-15" y1="-5.7" x2="15" y2="-5.7" width="0.127" layer="21"/>
-<pad name="SDA" x="-12.95" y="3.81" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
-<pad name="SCL" x="-12.95" y="1.27" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
-<pad name="GND" x="-12.95" y="-1.27" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
-<pad name="VCC" x="-12.95" y="-3.81" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="VCC" x="-12.95" y="3.81" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="GND" x="-12.95" y="1.27" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="SCL" x="-12.95" y="-1.27" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
+<pad name="SDA" x="-12.95" y="-3.81" drill="1" diameter="1.5" shape="octagon" rot="R270"/>
 <wire x1="-14.2" y1="5" x2="-14.2" y2="-5" width="0.127" layer="21"/>
 <wire x1="-11.7" y1="-5" x2="-11.7" y2="5" width="0.127" layer="21"/>
 <wire x1="-11.7" y1="-5" x2="-14.2" y2="-5" width="0.127" layer="21"/>
@@ -13396,10 +13396,10 @@ Source: www.kingbright.com</description>
 </packages>
 <symbols>
 <symbol name="DFR0647">
-<pin name="SDA" x="-2.54" y="5.08" length="middle"/>
-<pin name="SCL" x="-2.54" y="2.54" length="middle"/>
-<pin name="GND" x="-2.54" y="0" length="middle"/>
-<pin name="VCC" x="-2.54" y="-2.54" length="middle"/>
+<pin name="VCC" x="-2.54" y="5.08" length="middle"/>
+<pin name="GND" x="-2.54" y="2.54" length="middle"/>
+<pin name="SCL" x="-2.54" y="0" length="middle"/>
+<pin name="SDA" x="-2.54" y="-2.54" length="middle"/>
 <text x="-5.08" y="8.89" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
@@ -13412,10 +13412,10 @@ Source: www.kingbright.com</description>
 <devices>
 <device name="" package="DFR0647">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="SCL" pad="SCL"/>
-<connect gate="G$1" pin="SDA" pad="SDA"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="GND" pad="SCL"/>
+<connect gate="G$1" pin="SCL" pad="GND"/>
+<connect gate="G$1" pin="SDA" pad="VCC"/>
+<connect gate="G$1" pin="VCC" pad="SDA"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14260,19 +14260,19 @@ Source: www.kingbright.com</description>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="DISPLAY1" gate="G$1" pin="GND"/>
+<pinref part="DISPLAY1" gate="G$1" pin="SCL"/>
 <wire x1="-58.42" y1="119.38" x2="-66.04" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="SUPPLY33" gate="GND" pin="GND"/>
 <wire x1="-66.04" y1="119.38" x2="-66.04" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="DISPLAY2" gate="G$1" pin="GND"/>
+<pinref part="DISPLAY2" gate="G$1" pin="SCL"/>
 <wire x1="-58.42" y1="55.88" x2="-66.04" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="SUPPLY34" gate="GND" pin="GND"/>
 <wire x1="-66.04" y1="55.88" x2="-66.04" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="DISPLAY3" gate="G$1" pin="GND"/>
+<pinref part="DISPLAY3" gate="G$1" pin="SCL"/>
 <wire x1="-58.42" y1="-10.16" x2="-66.04" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="SUPPLY35" gate="GND" pin="GND"/>
 <wire x1="-66.04" y1="-10.16" x2="-66.04" y2="-15.24" width="0.1524" layer="91"/>
@@ -14502,7 +14502,7 @@ Source: www.kingbright.com</description>
 <wire x1="-20.32" y1="55.88" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="DISPLAY1" gate="G$1" pin="VCC"/>
+<pinref part="DISPLAY1" gate="G$1" pin="SDA"/>
 <wire x1="-58.42" y1="116.84" x2="-60.96" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="116.84" x2="-60.96" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="114.3" x2="-40.64" y2="114.3" width="0.1524" layer="91"/>
@@ -14510,7 +14510,7 @@ Source: www.kingbright.com</description>
 <wire x1="-40.64" y1="114.3" x2="-40.64" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="DISPLAY2" gate="G$1" pin="VCC"/>
+<pinref part="DISPLAY2" gate="G$1" pin="SDA"/>
 <wire x1="-58.42" y1="53.34" x2="-60.96" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="53.34" x2="-60.96" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="50.8" x2="-40.64" y2="50.8" width="0.1524" layer="91"/>
@@ -14518,7 +14518,7 @@ Source: www.kingbright.com</description>
 <wire x1="-40.64" y1="50.8" x2="-40.64" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="DISPLAY3" gate="G$1" pin="VCC"/>
+<pinref part="DISPLAY3" gate="G$1" pin="SDA"/>
 <wire x1="-58.42" y1="-12.7" x2="-60.96" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="-12.7" x2="-60.96" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="-15.24" x2="-40.64" y2="-15.24" width="0.1524" layer="91"/>
@@ -14548,7 +14548,7 @@ Source: www.kingbright.com</description>
 <label x="50.8" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DISPLAY1" gate="G$1" pin="SDA"/>
+<pinref part="DISPLAY1" gate="G$1" pin="VCC"/>
 <wire x1="-58.42" y1="124.46" x2="-60.96" y2="124.46" width="0.1524" layer="91"/>
 <label x="-62.23" y="125.73" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -14560,7 +14560,7 @@ Source: www.kingbright.com</description>
 <label x="50.8" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DISPLAY2" gate="G$1" pin="SDA"/>
+<pinref part="DISPLAY2" gate="G$1" pin="VCC"/>
 <wire x1="-58.42" y1="60.96" x2="-60.96" y2="60.96" width="0.1524" layer="91"/>
 <label x="-62.23" y="62.23" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -14572,7 +14572,7 @@ Source: www.kingbright.com</description>
 <label x="-5.08" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DISPLAY3" gate="G$1" pin="SDA"/>
+<pinref part="DISPLAY3" gate="G$1" pin="VCC"/>
 <wire x1="-58.42" y1="-5.08" x2="-60.96" y2="-5.08" width="0.1524" layer="91"/>
 <label x="-62.23" y="-3.81" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -14905,7 +14905,7 @@ Source: www.kingbright.com</description>
 <label x="50.8" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DISPLAY1" gate="G$1" pin="SCL"/>
+<pinref part="DISPLAY1" gate="G$1" pin="GND"/>
 <wire x1="-58.42" y1="121.92" x2="-60.96" y2="121.92" width="0.1524" layer="91"/>
 <label x="-62.23" y="123.19" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -14917,7 +14917,7 @@ Source: www.kingbright.com</description>
 <label x="50.8" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DISPLAY2" gate="G$1" pin="SCL"/>
+<pinref part="DISPLAY2" gate="G$1" pin="GND"/>
 <wire x1="-58.42" y1="58.42" x2="-60.96" y2="58.42" width="0.1524" layer="91"/>
 <label x="-62.23" y="59.69" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -14929,7 +14929,7 @@ Source: www.kingbright.com</description>
 <label x="-5.08" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DISPLAY3" gate="G$1" pin="SCL"/>
+<pinref part="DISPLAY3" gate="G$1" pin="GND"/>
 <wire x1="-58.42" y1="-7.62" x2="-60.96" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-62.23" y="-6.35" size="1.778" layer="95" rot="R180"/>
 </segment>
